@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
-  gem 'sdoc', '~> 0.4.0', group: :doc
+  gem 'sdoc', require: false
 end
 
 # Use ActiveModel has_secure_password
@@ -52,7 +52,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
